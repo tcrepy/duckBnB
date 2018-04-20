@@ -1,0 +1,41 @@
+page-login {
+  ion-content{
+    background: -moz-linear-gradient(top, $gradientBottom 0%, $gradientBottom 0%, $gradientBottom 0%, $gradientTop 100%);
+    background: -webkit-linear-gradient(top, $gradientBottom 0%,$gradientBottom 0%,$gradientBottom 0%,$gradientTop 100%);
+    background: linear-gradient(to bottom, $gradientBottom 0%,$gradientBottom 0%,$gradientBottom 0%,$gradientTop 100%);
+    .connexion{
+      margin-bottom: 50px;
+      a{
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    .loginTitle{
+      color: white;
+      font-size: 25px;
+      font-weight: 100;
+    }
+    h2{
+      color: white;
+    }
+    .logFacebook{
+      background-color: $white;
+      color : $pinkText;
+      border: none;
+      margin-bottom: 15px;
+      ion-icon{
+        margin-right: 10px;
+      }
+    }
+    .createAccount{
+      color: $white;
+      border-color: $white;
+      margin-bottom: 50px;
+    }
+    p{
+      color: $white;
+      font-size: 12px;
+    }
+  }
+
+}
