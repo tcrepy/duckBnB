@@ -5,7 +5,7 @@ page-login {
     background: linear-gradient(to bottom, $gradientBottom 0%,$gradientBottom 0%,$gradientBottom 0%,$gradientTop 100%);
     .connexion{
       margin-bottom: 50px;
-      a{
+      span{
         color: $white;
         text-decoration: none;
       }
