@@ -15,7 +15,13 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-$gradientBottom : #eb3640;
+$main : #eb3640;
 $gradientTop : #de2070;
 $white : #FFF;
 $pinkText : #e52c56;
+$gray : #e6e6e6;
+$black : #000;
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon, .tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{
+  color : $main;
+}

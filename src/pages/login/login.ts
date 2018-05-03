@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {TabsPage} from "../tabs/tabs";
+import {CreateAccountPage} from "../create-account/create-account";
 
 /**
  * Generated class for the LoginPage page.
@@ -23,8 +24,12 @@ export class LoginPage {
         console.log('ionViewDidLoad LoginPage');
     }
 
-    gotoHome() {
+    gotoLogin() {
         this.navCtrl.push(TabsPage);
+    }
+
+    gotoCreate() {
+        this.navCtrl.push(CreateAccountPage);
     }
 
 

@@ -5,9 +5,10 @@ import {MyApp} from './app.component';
 
 import {ExplorePage} from '../pages/explore/explore';
 import {ProfilPage} from '../pages/profil/profil';
-import {HomePage} from '../pages/home/home';
+import {TravelsPage} from "../pages/travels/travels";
 import {TabsPage} from '../pages/tabs/tabs';
 import {LoginPage} from "../pages/login/login";
+import {CreateAccountPage} from "../pages/create-account/create-account";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -17,9 +18,10 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         MyApp,
         ExplorePage,
         ProfilPage,
-        HomePage,
+        TravelsPage,
         TabsPage,
-        LoginPage
+        LoginPage,
+        CreateAccountPage
     ],
     imports: [
         BrowserModule,
@@ -30,9 +32,10 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         MyApp,
         ExplorePage,
         ProfilPage,
-        HomePage,
+        TravelsPage,
         TabsPage,
-        LoginPage
+        LoginPage,
+        CreateAccountPage
     ],
     providers: [
         StatusBar,

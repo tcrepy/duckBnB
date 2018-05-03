@@ -4,15 +4,46 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-content>
 
-  <ion-navbar>
+    <ion-row class="exploreTop">
+        <ion-searchbar (ionInput)="getItems($event)" placeholder="Essayez Paris"></ion-searchbar>
+        <button ion-button color="white">Dates</button>
+        <button ion-button color="white">Voyageurs</button>
+    </ion-row>
 
-  </ion-navbar>
+    <ion-grid>
+    <ion-row padding-left="15px" padding-right="15px">
+        <h2>Explorer Duckbnb</h2>
 
-</ion-header>
+        <ion-row>
+            <ion-card>
+                <img src="../../assets/imgs/appart.png"/>
+                <ion-card-content>
+                    <span class="desc">Maison entière - 2 lits</span>
+                    <ion-card-title>
+                        Maison avec terrasse - Paris Centre
+                    </ion-card-title>
+                    <p>
+                        122€ par nuit
+                    </p>
+                </ion-card-content>
+            </ion-card>
 
-
-<ion-content padding>
+            <ion-card col-md-6>
+                <img src="../../assets/imgs/appart.png"/>
+                <ion-card-content>
+                    <span class="desc">Maison entière - 2 lits</span>
+                    <ion-card-title>
+                        Maison avec terrasse - Paris Centre
+                    </ion-card-title>
+                    <p>
+                        122€ par nuit
+                    </p>
+                </ion-card-content>
+            </ion-card>
+        </ion-row>
+    </ion-row>
+    </ion-grid>
 
 </ion-content>

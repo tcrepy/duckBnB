@@ -1,8 +1,8 @@
 page-login {
   ion-content{
-    background: -moz-linear-gradient(top, $gradientBottom 0%, $gradientBottom 0%, $gradientBottom 0%, $gradientTop 100%);
-    background: -webkit-linear-gradient(top, $gradientBottom 0%,$gradientBottom 0%,$gradientBottom 0%,$gradientTop 100%);
-    background: linear-gradient(to bottom, $gradientBottom 0%,$gradientBottom 0%,$gradientBottom 0%,$gradientTop 100%);
+    background: -moz-linear-gradient(top, $main 0%, $main 0%, $main 0%, $gradientTop 100%);
+    background: -webkit-linear-gradient(top, $main 0%,$main 0%,$main 0%,$gradientTop 100%);
+    background: linear-gradient(to bottom, $main 0%,$main 0%,$main 0%,$gradientTop 100%);
     .connexion{
       margin-bottom: 50px;
       span{

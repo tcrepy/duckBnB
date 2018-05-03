@@ -1,3 +1,39 @@
 page-explore {
-
+  .exploreTop{
+    background-color: $gray;
+    .searchbar-ios{
+      background-color: $gray!important;
+      border-bottom: 0!important;
+      .searchbar-search-icon{
+        top : 63px!important;
+        left: 10px!important;
+      }
+    }
+    .searchbar-ios .searchbar-input{
+      background-color: $white;
+      height: 40px;
+      width: 80%;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      box-shadow: 1px 1px 0;
+    }
+    .button-ios{
+      margin : 0.5em 0.7em;
+      background-color: $white;
+      color: $black;
+    }
+  }
+  ion-card-content{
+    ion-card-title{
+      font-weight: bold;
+    }
+    h2{
+      font-weight: bold;
+    }
+    .desc{
+      color: $main;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
 }
