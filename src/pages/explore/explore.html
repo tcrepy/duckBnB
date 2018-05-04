@@ -17,7 +17,7 @@
         <h2>Explorer Duckbnb</h2>
 
         <ion-row>
-            <ion-card>
+            <ion-card (click)="gotoSingle()">
                 <img src="../../assets/imgs/appart.png"/>
                 <ion-card-content>
                     <span class="desc">Maison entière - 2 lits</span>
@@ -30,7 +30,7 @@
                 </ion-card-content>
             </ion-card>
 
-            <ion-card col-md-6>
+            <ion-card onclick="gotoSingle()">
                 <img src="../../assets/imgs/appart.png"/>
                 <ion-card-content>
                     <span class="desc">Maison entière - 2 lits</span>

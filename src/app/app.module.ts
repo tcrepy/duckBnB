@@ -9,6 +9,7 @@ import {TravelsPage} from "../pages/travels/travels";
 import {TabsPage} from '../pages/tabs/tabs';
 import {LoginPage} from "../pages/login/login";
 import {CreateAccountPage} from "../pages/create-account/create-account";
+import {SinglePage} from "../pages/single/single";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         TravelsPage,
         TabsPage,
         LoginPage,
-        CreateAccountPage
+        CreateAccountPage,
+        SinglePage
     ],
     imports: [
         BrowserModule,
@@ -35,7 +37,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         TravelsPage,
         TabsPage,
         LoginPage,
-        CreateAccountPage
+        CreateAccountPage,
+        SinglePage
     ],
     providers: [
         StatusBar,

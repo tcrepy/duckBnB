@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {TabsPage} from "../tabs/tabs";
+import {SinglePage} from "../single/single";
 
 /**
  * Generated class for the ExplorePage page.
@@ -10,16 +12,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-explore',
-  templateUrl: 'explore.html',
+    selector: 'page-explore',
+    templateUrl: 'explore.html',
 })
 export class ExplorePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ExplorePage');
-  }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad ExplorePage');
+    }
+
+    gotoSingle() {
+        this.navCtrl.push(SinglePage);
+    }
 
 }
