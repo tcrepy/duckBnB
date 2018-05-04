@@ -1,3 +1,26 @@
 page-travels {
+  ion-content{
+    ion-card{
+      box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.3);
+      ion-card-title{
+        font-weight: bold;
+        font-size: 18px;
+        .date{
+          color : $main;
+          font-weight: normal;
+          font-size: 15px;
+        }
+      }
+      ion-card-content{
+        .icone{
+          border : 1px solid $main;
+          border-radius: 7px;
+          ion-icon{
+            color: $main;
+          }
+        }
+      }
+    }
+  }
 
 }
