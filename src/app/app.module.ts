@@ -13,6 +13,8 @@ import {SinglePage} from "../pages/single/single";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
+import {ModalPage} from "../pages/modal/modal";
+
 
 @NgModule({
     declarations: [
@@ -23,7 +25,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         TabsPage,
         LoginPage,
         CreateAccountPage,
-        SinglePage
+        SinglePage,
+        ModalPage
     ],
     imports: [
         BrowserModule,
@@ -38,7 +41,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         TabsPage,
         LoginPage,
         CreateAccountPage,
-        SinglePage
+        SinglePage,
+        ModalPage
     ],
     providers: [
         StatusBar,
