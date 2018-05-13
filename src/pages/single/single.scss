@@ -12,8 +12,16 @@ page-single {
   ion-content{
     .desc{
       color: $main;
-      font-weight: bold;
+      font-family: poppinssemibold;
       text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 0.04em;
+      font-size: 11px;
+    }
+    h4{
+      margin: 5px 0 15px;
+      font-size: 16px;
+      font-family: poppinssemibold;
     }
     .photo{
       margin-top: 10px;
@@ -28,9 +36,26 @@ page-single {
     }
     p{
       font-size: 12px;
+      font-family: poppinslight;
+      margin: 0;
     }
     .pixel {
       height: 1px;
+    }
+    ion-col{
+      padding: 0 !important;
+    }
+    .propertyInfos {
+        margin: 15px 0 25px;
+    }
+    .thumbProperty{
+      width: 40px;
+      height: 40px;
+      background: url(../../assets/imgs/profil.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 100%;
+      float: right;
     }
   }
 }

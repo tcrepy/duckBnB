@@ -4,13 +4,13 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-    <img src="../../assets/imgs/appart.png" alt="appart">
+<ion-header class="singleProperty">
     <ion-icon (click)="backtoExplore()" name="arrow-round-back"></ion-icon>
 </ion-header>
 
 
 <ion-content>
+    <img src="../../assets/imgs/appart.png" alt="appart">
     <div padding>
         <p class="desc">Maison entière - 2 lits</p>
         <h4>Maison avec terrasse - Paris Centre</h4>
@@ -19,30 +19,32 @@
                 <p>Paris, Ile-de-France, France</p>
                 <p>Hôte : Raphaël</p>
             </ion-col>
-            <ion-col col-3 text-center>
-                <ion-icon class="photo" name="checkmark-circle"></ion-icon>
+            <ion-col col-4 text-right>
+                <div class="thumbProperty"></div>
             </ion-col>
         </ion-row>
-        <ion-row>
-            <ion-col col-6>
-                <ion-icon name="people"></ion-icon>
-                2 Voyageurs
-            </ion-col>
-            <ion-col col-6>
-                <ion-icon name="home"></ion-icon>
-                Maison
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col col-6>
-                <ion-icon name="people"></ion-icon>
-                2 lits
-            </ion-col>
-            <ion-col col-6>
-                <ion-icon name="home"></ion-icon>
-                1 salle de bain
-            </ion-col>
-        </ion-row>
+        <div class="propertyInfos">
+            <ion-row>
+                <ion-col col-6>
+                    <ion-icon name="people"></ion-icon>
+                    2 Voyageurs
+                </ion-col>
+                <ion-col col-6>
+                    <ion-icon name="home"></ion-icon>
+                    Maison
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-6>
+                    <ion-icon name="people"></ion-icon>
+                    2 lits
+                </ion-col>
+                <ion-col col-6>
+                    <ion-icon name="home"></ion-icon>
+                    1 salle de bain
+                </ion-col>
+            </ion-row>
+        </div>
         <p>Mon logement est proche de Hôtel Amour, Rose Bakery, LA MAISON MERE, Chez Casimir et Causses - La Fabrique.
             Vous
             apprécierez mon logement
