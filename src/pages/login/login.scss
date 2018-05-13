@@ -8,12 +8,21 @@ page-login {
       span{
         color: $white;
         text-decoration: none;
+        font-family: poppinssemibold;
+        font-size: 12px;
+        letter-spacing: 0.06em;
       }
     }
     .loginTitle{
       color: white;
       font-size: 25px;
-      font-weight: 100;
+      font-family: poppinslight;
+      strong {
+        font-family: poppinsbold;
+        letter-spacing: 0.04em;
+        margin-top: -8px;
+        display: block;
+      }
     }
     h2{
       color: white;
@@ -32,9 +41,30 @@ page-login {
       border-color: $white;
       margin-bottom: 50px;
     }
+    .logFacebook,
+    .createAccount{
+      display: block;
+      width: 100%;
+      padding: 22px 0;
+    }
+    .loginButton span {
+      text-transform: none;
+      font-family: poppinssemibold;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+    }
     p{
       color: $white;
       font-size: 12px;
+    }
+    .login-legal{
+      text-align: left;
+      span{
+        text-decoration: underline;
+      }
+    }
+    .scroll-content{
+      overflow: hidden;
     }
   }
 
