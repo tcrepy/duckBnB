@@ -8,8 +8,8 @@
 
     <ion-row class="exploreTop">
         <ion-searchbar (ionInput)="getItems($event)" placeholder="Essayez Paris"></ion-searchbar>
-        <button ion-button color="white">Dates</button>
-        <button ion-button color="white">Voyageurs</button>
+        <button ion-button class="searchButtons">Dates</button>
+        <button ion-button class="searchButtons">Voyageurs</button>
     </ion-row>
 
     <ion-grid>
@@ -24,22 +24,36 @@
                     <ion-card-title>
                         Maison avec terrasse - Paris Centre
                     </ion-card-title>
-                    <p>
+                    <p class="itemPrice">
                         122€ par nuit
                     </p>
+                    <div class="itemStars">
+                        <div class="starActive"></div>
+                        <div class="starActive"></div>
+                        <div class="starActive"></div>
+                        <div class="starActive"></div>
+                        <div class="starDisactive"></div>
+                    </div>
                 </ion-card-content>
             </ion-card>
 
             <ion-card onclick="gotoSingle()">
-                <img src="../../assets/imgs/appart.png"/>
+                <img src="../../assets/imgs/appart-2.png"/>
                 <ion-card-content>
-                    <span class="desc">Maison entière - 2 lits</span>
+                    <span class="desc">Maison entière - 1 lit</span>
                     <ion-card-title>
                         Maison avec terrasse - Paris Centre
                     </ion-card-title>
-                    <p>
-                        122€ par nuit
+                    <p class="itemPrice">
+                        94€ par nuit
                     </p>
+                    <div class="itemStars">
+                        <div class="starActive"></div>
+                        <div class="starActive"></div>
+                        <div class="starActive"></div>
+                        <div class="starDisactive"></div>
+                        <div class="starDisactive"></div>
+                    </div>
                 </ion-card-content>
             </ion-card>
         </ion-row>

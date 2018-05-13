@@ -125,3 +125,65 @@ $colors: (
 *{
 	font-family: Poppins;
 }
+
+
+// Tabs icons
+// --------------------------------------------------
+ion-tabs a.tab-button{
+	span.tab-button-text{
+		text-transform: uppercase;
+		font-size: 10px !important;
+	    letter-spacing: 0.04em;
+	    font-family: poppinsbold;
+	    transform: none !important;
+		&::before{
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			margin: auto;
+		    margin-bottom: 3px;
+		}
+	}
+	&:first-child span.tab-button-text::before{
+		content: url(../assets/imgs/duckicon-explorer.svg);
+	}
+	&[aria-selected="true"]{
+		&[aria-controls="tabpanel-t0-0"] span.tab-button-text{
+			color: #eb3640;
+			&::before{
+				content: url(../assets/imgs/duckicon-explorer-active.svg);
+			}
+		}
+	}
+	&:nth-child(2) span.tab-button-text::before{
+		content: url(../assets/imgs/duckicon-voyages.svg);
+	}
+	&[aria-selected="true"]{
+		&[aria-controls="tabpanel-t0-1"] span.tab-button-text{
+			color: #eb3640;
+			&::before{
+				content: url(../assets/imgs/duckicon-voyages-active.svg);
+			}
+		}
+	}
+	&:nth-child(3) span.tab-button-text::before{
+		content: url(../assets/imgs/duckicon-profil.svg);
+	}
+	&[aria-selected="true"]{
+		&[aria-controls="tabpanel-t0-2"] span.tab-button-text{
+			color: #eb3640;
+			&::before{
+				content: url(../assets/imgs/duckicon-profil-active.svg);
+			}
+		}
+	}
+}
+
+.tabs-wp[tabsPlacement=bottom] .tab-button{
+  border: 0 important;
+}
+
+ion-tabs.tabs.tabs-ios .tabbar{
+	padding: 7px 0;
+}

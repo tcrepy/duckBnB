@@ -1,12 +1,16 @@
 page-explore {
   .exploreTop {
     background-color: $gray;
-    .searchbar-ios {
-      background-color: $gray !important;
-      border-bottom: 0 !important;
-      .searchbar-search-icon {
-        top: 63px !important;
-        left: 10px !important;
+    padding: 30px 20px 15px;
+    .searchbar-md,
+    .searchbar-ios,
+    .searchbar-wp{
+      padding: 0;
+      .searchbar-input{
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .searchbar-input-container{
+        border: none;
       }
     }
     .searchbar-ios .searchbar-input {
@@ -22,12 +26,37 @@ page-explore {
       background-color: $white;
       color: $black;
     }
+    .searchbar-md .searchbar-input {
+        font-size: 16px;
+    }
+    ion-searchbar{
+      margin-bottom: 15px;
+      background: none;
+      border: none;
+    }
+    .searchbar-ios .searchbar-input {
+      width: 100%;
+      margin: 0;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .button-ios{
+      margin: 0;
+    }
   }
   ion-card {
     cursor: pointer;
     ion-card-content {
-      ion-card-title {
-        font-weight: bold;
+      border: 1px solid #ddd;
+      ion-card-title.card-title.card-title-md,
+      ion-card-title.card-title.card-title-ios,
+      ion-card-title.card-title.card-title-wp {
+          margin: 0;
+          padding: 0;
+          font-size: 18px;
+          font-family: poppinssemibold;
+          letter-spacing: 0.02em;
       }
       h2 {
         font-weight: bold;
@@ -35,9 +64,80 @@ page-explore {
       .desc {
         color: $main;
         text-transform: uppercase;
-        font-weight: bold;
+        font-family: poppinssemibold;
+        letter-spacing: 0.1em;
+        font-size: 11px;
+      }
+      p.itemPrice{
+        font-family: poppinslight;
+        color: #3c3c3c;
+        font-size: 18px;
+        margin-top: 15px;
+        display: inline-block;
+      }
+      .itemStars {
+        display: inline-block;
+        float: right;
+        margin-top: 18px;
+        div{
+          width: 10px;
+          height: 10px;
+          position: relative;
+          display: inline-block;
+          &::before{
+            content: "★";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: -7px;
+            left: -2px;
+            font-size: 18px;
+          }
+        }
+        .starActive::before{
+          color: #eb3640;
+        }
+        .starDisactive::before{
+          color: #999999;
+        }
       }
     }
-
+  }
+  ion-grid{
+    h2{
+      color: #3c3c3c;
+      font-family: poppinsbold;
+    }
+    .card-md,
+    .card-ios,
+    .card-wp {
+      margin: 0 0 20px;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+  .searchButtons{
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #bbbcbb;
+    border-radius: 5px;
+    margin: 0;
+    span.button-inner {
+      color: #3c3c3c;
+      text-transform: none;
+      font-family: poppinsmedium;
+      letter-spacing: 0.04em;
+    }
+    &:nth-child(2) {
+        margin-right: 10px;
+    }
+  }
+  .searchbar-ios .searchbar-search-icon {
+      left: 8px;
+      top: 12px;
+      width: 14px;
+      height: 14px;
+      background-size: 14px;
   }
 }
