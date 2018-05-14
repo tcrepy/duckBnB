@@ -1,12 +1,14 @@
 page-single {
   ion-header{
-    ion-icon{
-      color: $white;
-      position: absolute;
-      top: 10%;
-      left: 5%;
-      font-size: 30px;
-      font-weight: bold;
+    ion-icon {
+        color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+        font-weight: 600;
+        background: #ff2b36;
+        padding: 10px 10px;
     }
   }
   ion-content{
