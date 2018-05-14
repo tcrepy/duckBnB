@@ -17,15 +17,25 @@ import {TabsPage} from "../tabs/tabs";
 })
 export class SinglePage {
 
+  tabBarElement: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SinglePage');
   }
 
-    backtoExplore(){
-        this.navCtrl.push(ExplorePage);
-    }
+  backtoExplore(){
+      this.navCtrl.push(ExplorePage);
+  }
+
+  ionViewWillEnter() {
+    this.tabBarElement.style.display = 'none';
+  }
+
+  ionViewWillLeave() {
+    this.tabBarElement.style.display = 'flex';
+  }
 
 }

@@ -47,6 +47,26 @@ page-single {
     }
     .propertyInfos {
         margin: 15px 0 25px;
+        ion-icon{
+          width: 13px;
+          height: 13px;
+          background-size: cover !important;
+          position: relative;
+          top: 2px;
+          margin-right: 5px;
+          &[name="duckbnb-number-persons"]{
+            background: url(../../assets/imgs/duckbnb-number-persons.png);
+          }
+          &[name="duckbnb-type-property"]{
+            background: url(../../assets/imgs/duckbnb-type-property.png);
+          }
+          &[name="duckbnb-number-bed"]{
+            background: url(../../assets/imgs/duckbnb-number-bed.png);
+          }
+          &[name="duckbnb-number-bath"]{
+            background: url(../../assets/imgs/duckbnb-number-bath.png);
+          }
+        }
     }
     .thumbProperty{
       width: 40px;
@@ -56,6 +76,44 @@ page-single {
       background-position: center;
       border-radius: 100%;
       float: right;
+    }
+    p.propertyNumberNight{
+      padding: 15px 0 0;
+      border-top: 1px solid #ccc;
+      margin-top: 20px;
+    }
+    .propetyDate{
+      padding: 30px 15px !important;
+      p {
+          font-size: 15px;
+      }
+      ion-col:nth-child(2) p{
+        text-align: right;
+      }
+    }
+  }
+  tabbar{
+    display: none !important;
+  }
+  ion-footer {
+    padding: 5px 10px;
+    p{
+      font-size: 16px;
+      margin: 0;
+      padding: 10px 0;
+    }
+    button{
+      &.button-md,
+      &.button-ios,
+      &.button-wp{
+        background: #ff2b36;
+        text-transform: none;
+        font-size: 12px;
+      }
+    }
+    ion-col:nth-child(2){
+      position: relative;
+      right: 10px;
     }
   }
 }
