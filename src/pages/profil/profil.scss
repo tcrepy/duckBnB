@@ -13,4 +13,35 @@ page-profil {
   p{
     font-weight : lighter;
   }
+  .profileDescription {
+    padding: 30px;
+    h2, h3, h4, p{
+      margin: 0;
+      color: #3c3c3c;
+    }
+    h2 {
+      font-family: poppinssemibold;
+      font-size: 22px;
+    }
+    h3{
+      font-family: poppinslight;
+      font-size: 15px;
+      margin: 5px 0 0;
+    }
+    p{
+      font-family: poppinslight;
+      font-size: 12px;
+    }
+    hr{
+      margin: 15px 0; 
+    }
+    p.profileMember {
+        font-size: 14px;
+        font-family: poppins;
+    }
+    h4 {
+        font-family: poppinssemibold;
+        font-size: 13px;
+    }
+  }
 }
