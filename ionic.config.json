@@ -1,6 +1,6 @@
 {
   "name": "duckBnB",
-  "app_id": "",
+  "app_id": "3138071c",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
